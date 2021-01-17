@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa24a88-3772-4452-9863-8824b8b8e644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cela-database-script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,10 @@
       <workItem from="1605778703256" duration="5029000" />
       <workItem from="1605807543373" duration="621000" />
       <workItem from="1606372171120" duration="722000" />
-      <workItem from="1610792608179" duration="1871000" />
+      <workItem from="1610792608179" duration="1950000" />
+      <workItem from="1610880683667" duration="603000" />
+      <workItem from="1610903188009" duration="14000" />
+      <workItem from="1610903222940" duration="603000" />
     </task>
     <servers />
   </component>
@@ -135,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.js">

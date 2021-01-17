@@ -155,7 +155,21 @@ CREATE TABLE `subject` (
 
 LOCK TABLES `subject` WRITE;
 /*!40000 ALTER TABLE `subject` DISABLE KEYS */;
-INSERT INTO `subject` VALUES (0,'Software Architecture and Verification','Lorem Ipsum',5,1,0),(1,'Software Development Studio 2','Lorem Ipsum',5,1,0),(2,'Pre-diploma Seminar','Lorem Ipsum',2,1,0),(3,'Quality Managment and Experimental Software E','Lorem Ipsum',4,1,0);
+INSERT INTO `subject` VALUES 
+(0,'Software Architecture and Verification','In the lectures you will learn the definition of software architecture, role of the architect, process of creating software architecture, how and what should be documented in description of software architecture. In the laboratory: creating a software architecture description, including usability tree, design decisions and architectural views. Preparation to an ATAM meeting.',6,1,0),
+(1,'Software Development Studio 2','The course is the continuation of the Software Development 1 course given in the previous semester and is about further development of a software project for a real customer.',6,1,0),
+(2,'Pre-diploma Seminar','Seminars are conducted in the form of 15 2-hour meetings. During seminar classes, the students are to prepare and give three presentations in English related to the topic considered for the prospective Master thesis.',3,1,0),
+(3,'Quality Managment and Experimental Software Eng.','The course includes seminars and project classes. During the seminars students learn and discuss about quality management and experimental engineering. A part of the seminar classes has a form of showcase or individual tasks that are performed by students. During the project classes’ student is running a research project that has to employ at least one of the following empirical methods: controlled experiment, case study, survey, or meta-analysis.',5,1,0),
+(4,'Software Evolution and Maintenance','The aim of this course is to present students with models and mechanisms of software evolution, as well as to develop the ability to extract information and analyze repositories and, based on the results of this analysis, evaluate the process of evolution of a given component or artifact.',6,1,0),
+(5,'Scientific and Technical Writing','Presenting students’ scientific career and interests. The writing process: text organisation. Presenting Thesis statement. Elements of a formal definition. Elements and types of paragraphs (process, comparison/contrast). Forms of scientific expression: reporting results of research, a review of a selected article on newest developments in computer science. Differences between summary and paraphrase. The issue of plagiarism in scientific papers. Summarising: main structural elements, including relevant information in a logical order. Summary and abstract. Editing and proofreading scientific papers. Main features of scientific articles. Quoting.',2,1,0),
+(6,'Introduction to Computing','The lectures and laboratory classes regard IT methods and tools that are currently used by professional IT companies. The presentations of the methods and tools can have a form of lecture or tutorial conducted during laboratory classes.',5,1,0),
+(7,'Introduction to Programming','Python programming for beginners.',5,1,0),
+(8,'Introduction to Artificial Intelligence','New course, no description available yet.',3,1,0),
+(9,'Database Systems','New course, no description available yet.',5,1,0),
+(10,'Artificial Intelligence','New course, no description available yet.',5,1,0),
+(11,'Polish','Introduction to the basics of Polish language',2,1,0);
+
+
 /*!40000 ALTER TABLE `subject` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -168,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-15 18:36:25
+-- Dump completed on 2021-01-15 18:36:25semester
