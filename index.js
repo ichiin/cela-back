@@ -110,23 +110,23 @@ app.post("/setUserInformation", jsonParser, (req, res) => {
     return res.status(422).json({ errors: errors.array() });
   }
   let email = req.body.email || "NULL";
-  let lastName = req.body.lastName || "NULL";
-  let firstName = req.body.firstName || "NULL";
+  let lastName = req.body.lastName || "";
+  let firstName = req.body.firstName || "";
   let birthDate =
     moment(new Date(req.body.birthDate)).format("YYYY-MM-DD") || new Date();
-  let nationality = req.body.nationality || "NULL";
-  let sex = req.body.sex || "NULL";
+  let nationality = req.body.nationality || "";
+  let sex = req.body.sex || "";
   let fieldOfEducation = parseInt(req.body.fieldOfEducation) || 1;
-  let sending_institutionName = req.body.sending_institutionName || "NULL";
-  let sending_faculty = req.body.sending_faculty || NULL;
-  let sending_erasmusCode = req.body.sendingErasmusCode || "NULL";
-  let sending_address = req.body.sending_address || "NULL";
-  let sending_country = req.body.sending_country || "NULL";
-  let sending_contact_name = req.body.sending_contact_name || "NULL";
-  let sending_contact_mail = req.body.sending_contact_mail || "NULL";
+  let sending_institutionName = req.body.sending_institutionName || "";
+  let sending_faculty = req.body.sending_faculty || "";
+  let sending_erasmusCode = req.body.sendingErasmusCode || "";
+  let sending_address = req.body.sending_address || "";
+  let sending_country = req.body.sending_country || "";
+  let sending_contact_name = req.body.sending_contact_name || "";
+  let sending_contact_mail = req.body.sending_contact_mail || "";
   //let receiving_faculty = "NULL";
-  let receiving_contact_name = req.body.receiving_contact_name || "NULL";
-  let receiving_contact_mail = req.body.receiving_contact_mail || "NULL";
+  let receiving_contact_name = req.body.receiving_contact_name || "";
+  let receiving_contact_mail = req.body.receiving_contact_mail || "";
 
   connection.query(
     "UPDATE `student` SET `last_name` = ?,`first_name` = ?,`birth_date` =  ?,`nationality` =  ?,`sex` =  ?,`field_of_education` =  ?,`sending_inst_name` =  ?,`sending_inst_dept` =  ?,`sending_inst_erascode` =  ?,`sending_inst_address` =  ?,`sending_inst_country` =  ?,`sending_inst_contact_name` =  ?,`sending_inst_contact_email` =  ?,`receiving_inst_contact_name` =  ?,`receiving_inst_contact_email` =  ? WHERE student.email = ?",
