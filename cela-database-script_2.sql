@@ -83,6 +83,15 @@ CREATE TABLE `student` (
   `id_faculty` int DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `password` varchar(45) DEFAULT NULL,
+  `sending_inst_name` varchar(100) DEFAULT NULL,
+  `sending_inst_dept` varchar(100) DEFAULT NULL,
+  `sending_inst_erascode` varchar(45) DEFAULT NULL,
+  `sending_inst_address` varchar(200) DEFAULT NULL,
+  `sending_inst_country` varchar(45) DEFAULT NULL,
+  `sending_inst_contact_name` varchar(100) DEFAULT NULL,
+  `sending_inst_contact_email` varchar(100) DEFAULT NULL,
+  `receiving_inst_contact_name` varchar(100) DEFAULT NULL,
+  `receiving_inst_contact_email` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_student_faculty_idx` (`id_faculty`),
   CONSTRAINT `fk_student_faculty` FOREIGN KEY (`id_faculty`) REFERENCES `faculty` (`id`)
@@ -95,7 +104,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (1,'Mihotić','Ivona','1995-04-15','Croatian','Female',1,0,'ivi_1504@hotmail.com','ivona'),(38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'daniel.dujmovic@fer.hr','daniel');
+INSERT INTO `student` VALUES (1,'Mihotić','Ivona','1995-04-15','Croatian','Female',1,0,'ivi_1504@hotmail.com','ivona', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),(38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'daniel.dujmovic@fer.hr','daniel', NULL, NULL, NULL, NULL, NULL ,NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
