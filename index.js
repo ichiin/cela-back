@@ -119,7 +119,7 @@ app.post("/setUserInformation", jsonParser, (req, res) => {
   let fieldOfEducation = parseInt(req.body.fieldOfEducation) || 1;
   let sending_institutionName = req.body.sending_institutionName || "NULL";
   let sending_faculty = req.body.sending_faculty || NULL;
-  let sending_erasmusCode = req.body.sending_erasmusCode || "NULL";
+  let sending_erasmusCode = req.body.sendingErasmusCode || "NULL";
   let sending_address = req.body.sending_address || "NULL";
   let sending_country = req.body.sending_country || "NULL";
   let sending_contact_name = req.body.sending_contact_name || "NULL";
@@ -129,7 +129,7 @@ app.post("/setUserInformation", jsonParser, (req, res) => {
   let receiving_contact_mail = req.body.receiving_contact_mail || "NULL";
 
   connection.query(
-    "UPDATE `student` SET `last_name` = ?,`first_name` = ?,`birth_date` =  ?,`nationality` =  ?,`sex` =  ?,`field_of_education` =  ?,`sending_inst_name` =  ?,`sending_inst_dept` =  ?,`sending_inst_erascode` =  ?,`sending_inst_address` =  ?,`sending_inst_country` =  ?,`sending_inst_contact_name` =  ?,`sending_inst_contact_email` =  ?,`receiving_inst_contact_name` =  ?,`receiving_inst_contact_name` =  ? WHERE student.email = ?",
+    "UPDATE `student` SET `last_name` = ?,`first_name` = ?,`birth_date` =  ?,`nationality` =  ?,`sex` =  ?,`field_of_education` =  ?,`sending_inst_name` =  ?,`sending_inst_dept` =  ?,`sending_inst_erascode` =  ?,`sending_inst_address` =  ?,`sending_inst_country` =  ?,`sending_inst_contact_name` =  ?,`sending_inst_contact_email` =  ?,`receiving_inst_contact_name` =  ?,`receiving_inst_contact_email` =  ? WHERE student.email = ?",
     [
       lastName,
       firstName,
