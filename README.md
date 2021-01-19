@@ -7,6 +7,6 @@ Navigate where you want to install the file and open windows cmd or git cmd.
 1. git clone 'https://github.com/ichiin/cela-back.git'
 2. npm install
 Everything should be install and ready to run ! 
-IMPORTANT : MAKE SURE TO HAVE YOUR SQL DATABASE INFORMATION CORRECT AND RUNNING !
+\nIMPORTANT : MAKE SURE TO HAVE YOUR SQL DATABASE INFORMATION CORRECT AND RUNNING !
 IF YOU CHANGE THE SERVER INFORMATIONS, YOU WILL NEED TO CHANGE THOSE VALUES IN THE FRONT END AS WELL
 3. node index.js
